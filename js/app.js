@@ -9,7 +9,7 @@ let keywords = [];
 
 Picture.prototype.render = function() {
     $('section').append(`
-    <div>
+    <div class="${this.keyword}">
     <h4>${this.title}</h4>
     <img src="${this.image_url}">
     <h5>${this.description}</h5>
@@ -18,7 +18,7 @@ Picture.prototype.render = function() {
 
     if (keywords.includes(this.keyword) !== true) {
         keywords.push(this.keyword);
-        $('select').append(`<option>${this.keyword}</option>`);
+        $('select').append(`<option value="${this.keyword}">${this.keyword}</option>`);
     }
 }
 
@@ -38,4 +38,10 @@ $('document').ready(function() {
                 picture.render();
             });
         });
+
+    $('select').on('change', function() {
+        chosenOption = '.' + this.value;
+        $('div').hide();
+        $(chosenOption).show();
+    });
 });
