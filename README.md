@@ -1,4 +1,4 @@
-# jQuery
+# lab-02
 
 - Number and name of feature: **#1 Display images**
 
