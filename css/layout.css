@@ -1,0 +1,9 @@
+div {
+    border: 1px solid black;
+    margin: 15px;
+    width: 400px;
+    height: 400px;
+    padding: 6px;
+    float: left;
+    overflow: auto;
+}

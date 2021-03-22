@@ -1,17 +1,3 @@
-img {
-    width: 300px;
-}
-
-div {
-    border: 1px solid black;
-    margin: 15px;
-    width: 400px;
-    height: 400px;
-    padding: 6px;
-    float: left;
-    overflow: auto;
-}
-
-.newLine {
-    clear: both;
+* {
+    font-family: 'Roboto', sans-serif;
 }

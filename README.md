@@ -26,8 +26,8 @@
 
     - Estimate of time needed to complete: **1 hour**
 
-    - Start time: _____
+    - Start time: **5pm**
 
-    - Finish time: _____
+    - Finish time: **5:30pm**
 
-    - Actual time needed to complete: _____
+    - Actual time needed to complete: **.5 hour**
