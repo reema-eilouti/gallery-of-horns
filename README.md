@@ -24,13 +24,13 @@
 
 - Number and name of feature: **#3 Styling with Flexbox**
 
-    - Estimate of time needed to complete: **--**
+    - Estimate of time needed to complete: **.5 hour**
 
-    - Start time: **--**
+    - Start time: **5pm**
 
-    - Finish time: **--**
+    - Finish time: **5:15pm**
 
-    - Actual time needed to complete: **--**
+    - Actual time needed to complete: **.25 hour**
 
 
 - Number and name of feature: **#3 Sort the images**
