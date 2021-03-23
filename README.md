@@ -35,10 +35,10 @@
 
 - Number and name of feature: **#3 Sort the images**
 
-    - Estimate of time needed to complete: **--**
+    - Estimate of time needed to complete: **1 hour**
 
-    - Start time: **--**
+    - Start time: **6pm**
 
-    - Finish time: **--**
+    - Finish time: **7pm**
 
-    - Actual time needed to complete: **--**
+    - Actual time needed to complete: **1 hour**

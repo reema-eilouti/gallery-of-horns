@@ -18,11 +18,11 @@ Picture.prototype.render = function() {
 
     if (keywords.includes(this.keyword) !== true) {
         keywords.push(this.keyword);
-        $('select').append(`<option value="${this.keyword}">${this.keyword}</option>`);
+        $('#filter').append(`<option value="${this.keyword}">${this.keyword}</option>`);
     }
 }
 
-
+let pictures = [];
 
 $('document').ready(function() {
 
@@ -35,13 +35,46 @@ $('document').ready(function() {
         .then(data => {
             data.forEach(item => {
                 let picture = new Picture(item);
+                pictures.push(picture);
                 picture.render();
             });
         });
 
-    $('select').on('change', function() {
+    $('#filter').on('change', function() {
         chosenOption = '.' + this.value;
         $('div').hide();
         $(chosenOption).show();
+    });
+
+    $('#sort').on('change', function() {
+        if (this.value == "title") {
+            $('div').remove();
+            pictures.sort((a, b) => {
+                if (a.title < b.title) {
+                    return -1;
+                }
+                if (a.title > b.title) {
+                    return 1;
+                }
+            });
+
+            console.log(pictures);
+
+            pictures.forEach(picture => {
+                picture.render();
+            });
+
+        }
+        if (this.value == "horns") {
+            $('div').remove();
+            pictures.sort((a, b) => {
+                return a.horns - b.horns;
+            });
+
+            pictures.forEach(picture => {
+                picture.render();
+            });
+
+        }
     });
 });

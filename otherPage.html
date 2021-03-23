@@ -20,8 +20,14 @@
             <h1>The Gallery of Horns</h1>
         </header>
         <main>
-            <select>
+            <select id="filter">
             <option value="default">Filter by Keyword</option>
+            </select>
+
+            <select id="sort">
+                <option value="default">Sort</option>
+                <option value="title">Sort by Title</option>
+                <option value="horns">Sort by Number of Horns</option>
             </select>
 
             <br> <br>
@@ -34,6 +40,7 @@
                         <h4>{{title}}</h4>
                         <img src="{{image_url}}">
                         <h5>{{description}}</h5>
+                        <h6>horns: {{horns}}</h6>
                     </div>
                 </template>
 
