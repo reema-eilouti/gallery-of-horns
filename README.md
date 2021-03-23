@@ -1,14 +1,14 @@
-# lab-02
+# lab-03
 
 - Number and name of feature: **#1 Pagination**
 
-    - Estimate of time needed to complete: **--**
+    - Estimate of time needed to complete: **.5 hour**
 
-    - Start time: **--**
+    - Start time: **5:30pm**
 
-    - Finish time: **--**
+    - Finish time: **6pm**
 
-    - Actual time needed to complete: **--**
+    - Actual time needed to complete: **.5 hour**
 
 
 - Number and name of feature: **#2 Templating**
