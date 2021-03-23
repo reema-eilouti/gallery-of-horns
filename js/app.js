@@ -8,13 +8,13 @@ function Picture(picture) {
 let keywords = [];
 
 Picture.prototype.render = function() {
-    $('section').append(`
-    <div class="${this.keyword}">
-    <h4>${this.title}</h4>
-    <img src="${this.image_url}">
-    <h5>${this.description}</h5>
-    </div>
-  `);
+
+    let template = $('#photos').html();
+
+    let html = Mustache.render(template, this);
+
+    $('section').append(html);
+
 
     if (keywords.includes(this.keyword) !== true) {
         keywords.push(this.keyword);
