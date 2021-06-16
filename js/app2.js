@@ -9,11 +9,11 @@ let keywords = [];
 
 Picture.prototype.render = function() {
 
-    let template = $('#photos').html();
+    let template = $('#photos2').html();
 
     let html = Mustache.render(template, this);
 
-    $('#first').append(html);
+    $('#second').append(html);
 
 
     if (keywords.includes(this.keyword) !== true) {
@@ -31,7 +31,7 @@ $('document').ready(function() {
         dataType: 'json'
     };
 
-    $.ajax('./data/page-1.json', ajaxSettings)
+    $.ajax('./data/page-2.json', ajaxSettings)
         .then(data => {
             data.forEach(item => {
                 let picture = new Picture(item);
@@ -39,7 +39,6 @@ $('document').ready(function() {
                 picture.render();
             });
         });
-
 
     $('#filter').on('change', function() {
         chosenOption = '.' + this.value;
@@ -58,6 +57,8 @@ $('document').ready(function() {
                     return 1;
                 }
             });
+
+            console.log(pictures);
 
             pictures.forEach(picture => {
                 picture.render();
